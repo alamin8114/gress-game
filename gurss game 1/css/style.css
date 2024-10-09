@@ -1,0 +1,100 @@
+/* =======common css part start======= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+/*---------- common css part end -------*/
+
+/* ++++++++++++container part start here++++++++++ */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/backimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ===========change css part start here================= */
+.changeNumber{
+    font-size: 26px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+.contain{
+    padding: 15px 20px;
+    border: 8px double #FCCD2A;
+}
+/* ////////////////h2 part start here////////////// */
+.contain h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contain .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* *************input part start here*************** */
+.contain input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 36px;
+    color: #FEFAE0;
+    margin-left: 5px;
+}
+/* ++++++++++++++++button part start here+++++++++++++++ */
+.contain button{
+    padding: 8px 22px;
+    font-size: 24px;
+    background-color: #FF6600;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.contain button:active{
+    transform: scale(1.1);
+}
+
+.playerTwo , .playerThree{
+    display: none;
+}
+/* -----------------error part start here--------------- */
+.error{
+    font-size: 22px;
+    color: rgb(162, 255, 12);
+    font-weight: bolder;
+}
+/* ===========winner part start here============== */
+.winner{
+    display: none;
+}
+
+.winner img{
+    height: 350px;
+    border-radius: 20px;
+}
+.winner .result{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+    color: #000000;
+}
+/* ++++++++++++ container part end here  ++++++++++ */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- +++++++++++++++ container part start here ++++++++++++ -->
+    <div class="container">
+        <!-- ---------error part start here------------- -->
+        <div class="error"></div>
+        <!-- ---------error part start here------------- -->
+            <!-- ===========player one start here=========== -->
+        <div class="contain playerOne">
+            <h2 class="playerName">Player - 1</h2>
+                <div class="main ">
+                    <input class="playerOneInput " placeholder="Enter One Value" type="number">
+                    <button onclick="handelClick()" >Guess</button>
+                </div>
+            </div>
+            <!-- ===========player one end here=========== -->
+            <!-- ===========player two start here===========  -->
+            <div class="contain playerTwo">
+                <h2 class="playerName">Player - 2</h2>
+                <p class="changeNumber">
+                    Change left <span class="changeCount">0</span>/5
+                </p>
+                    <div class="main">
+                        <input placeholder="Enter One Value" type="number" class="playerTwoInput">
+                        <button onclick="handelClick2()">Go</button>
+                    </div>
+            </div>
+            <!-- ===========player end end here=========== -->
+            <!-- ===========player three start here=========== -->
+            <div class="contain playerThree">
+                <h2 class="playerName">Player - 3</h2>
+                <p class="changeNumber">
+                    Change left <span class="changeCount2">0</span>/5
+                </p>
+                    <div class="main">
+                        <input onkeydown="inputKey(event)" placeholder="Enter One Value" type="number" class="playerThreeInput">
+                        <button onclick="handelClick3()" class="playerThreeButton">Ran</button>
+                    </div>
+            </div>
+            <!-- ===========player three end here=========== -->
+            <!-- ============winner part start here============== -->
+            <div class="winner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/7e6e0e141904169.625d55c68b215.gif" alt="imgs">
+                <h3 class="result"></h3>
+            </div>
+            <!-- ===========winner part end here=========== -->
+    </div>
+    <!-- +++++++++++++++ container part end here ++++++++++++ -->
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
